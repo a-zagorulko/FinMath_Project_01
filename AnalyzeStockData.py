@@ -23,13 +23,13 @@ import ast
 import pandas as pd
 
 # READ data from files
-with open('balanceSheet_SIX.txt', 'r') as input:
+with open('balanceSheet_Russell3000.txt', 'r') as input:
     balanceSheet = ast.literal_eval(input.read())
 
-with open('incomeStatement_SIX.txt', 'r') as input:
+with open('incomeStatement_Russell3000.txt', 'r') as input:
     incomeStatement = ast.literal_eval(input.read())
 
-with open('cashStatement_SIX.txt', 'r') as input:
+with open('cashStatement_Russell3000.txt', 'r') as input:
     cashStatement = ast.literal_eval(input.read())
 
 ############### ROE and EPSG GROWTH ###############

@@ -30,10 +30,10 @@ name1 = 'Russell3000'
 name2 = 'SIX'
 threads = 4
 
-errors_SIX, time_SIX = scrape_yahoofinance(stocks2, name2, threads)
-print(errors_SIX, time_SIX)
+#errors_SIX, time_SIX = scrape_yahoofinance(stocks2, name2, threads)
+#print(errors_SIX, time_SIX)
 
-
+errors_RUSSELL3000, time_RUSSELL3000 = scrape_yahoofinance(stocks1, name1, threads)
 
 
 

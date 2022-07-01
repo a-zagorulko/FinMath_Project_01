@@ -58,6 +58,7 @@ def scrape_tickers():
 
     # SIX Dataframe
     path = os.path.abspath('SIX_equity_issuers.csv')
+    print(path)
     df_six_data = pd.read_csv(path, sep=';',
                               encoding='latin-1')
     df_swiss1 = df_six_data.Company

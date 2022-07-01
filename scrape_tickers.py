@@ -13,7 +13,7 @@ import datetime as dt
 import pandas as pd
 import numpy as np
 import urllib.request
-import tabula
+from tabula.io import read_pdf
 import os
 
 def scrape_tickers():
@@ -34,7 +34,7 @@ def scrape_tickers():
     download_file(russell3000_link, f_name)
 
     # Parse PDF into list
-    PDF_data = tabula.read_pdf(f_name + '.pdf', pages='all')
+    PDF_data = read_pdf(f_name + '.pdf', pages='all')
     df_russell = pd.DataFrame(columns=['Company', 'Ticker'])
 
     # Convert list into dataframe
@@ -58,6 +58,7 @@ def scrape_tickers():
 
     # SIX Dataframe
     path = os.path.abspath('SIX_equity_issuers.csv')
+    print(path)
     df_six_data = pd.read_csv(path, sep=';',
                               encoding='latin-1')
     df_swiss1 = df_six_data.Company

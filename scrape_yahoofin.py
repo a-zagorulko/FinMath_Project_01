@@ -43,6 +43,7 @@ def scrape_yahoofinance(stocks, name, threads):
             balanceSheet[stock] = balance_sheet_data['balanceSheetHistory'][stock]
             incomeStatement[stock] = income_statement_data['incomeStatementHistory'][stock]
             cashStatement[stock] = cash_statement_data['cashflowStatementHistory'][stock]
+            print(stock)
         except:
             print('ERROR with retrieving stock data')
             errors.append(stock)

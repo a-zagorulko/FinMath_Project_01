@@ -8,7 +8,7 @@ Outline:
 3. Read the .txt file literally and analyse the company information using non-cashflow and cashflow based methods. Select criteria to form a group of stocks to further analyse. 
 
 Files: 
-Company Data: Contains .txt files of dictionaries that contain company information scraped using yahoofinance in the function file SaveStockData.
+------.txt files of dictionaries that contain company information scraped using yahoofinance in the function file SaveStockData.
 scrape_tickers.py is the function used to scrape ticker information from files to dataframes.
 scrape_yahoofin.py is the function used to scrape yahoofinance, whereby multithreading is used to multiply in/out limited yahoo api.
 

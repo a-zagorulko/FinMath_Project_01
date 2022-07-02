@@ -3,9 +3,12 @@ scrape_yahoofin.py
 Author: a-zagorulko
 Date: 22.06.2022
 
-Function that gets data from YahooFinance for given stock
-Input: tickerlist
-Output:
+Function that creates txt files of dictionaries of balance, income and cash statements
+    :param stocks: list, array, or df of stock tickers
+    :param name: name to append to file name
+    :param threads: int indicating number of threads for multithreading
+    :return: array of tickers with errors, time for operation
+
 
 For yahoofinancials function see: https://pypi.org/project/yahoofinancials/
 For multithreading with concurrent.futures see: https://docs.python.org/3/library/concurrent.futures.html

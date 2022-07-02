@@ -6,6 +6,8 @@ Date: 30.06.2022
 This code saves balance sheet, income statement, cash statement data of a stock list into a dictionary
 in a txt file.
 
+SET: threads to match max threads of your machine.s
+
 Stock Lists:
 Russell3000
 SIX
@@ -28,7 +30,7 @@ stocks2 = swiss_stocks['Symbol']
 # Set names and thread count
 name1 = 'Russell3000'
 name2 = 'SIX'
-threads = 4
+threads = 8
 
 errors_SIX, time_SIX = scrape_yahoofinance(stocks2, name2, threads)
 print(errors_SIX, time_SIX)

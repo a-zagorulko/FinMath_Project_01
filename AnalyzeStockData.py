@@ -101,6 +101,28 @@ def selectStocks_ROE_EPSG(name, ROE_req, EPSG_req):
     return count_cond, count_missing, count_eps_0, roe_crit, eps_crit, both
 
 
-selectStocks_ROE_EPSG('Russell3000', 50, 10)
+selectStocks_ROE_EPSG('SIX', 15, 15)
 
 ################## Cash-Flow-Depreciation Methods ##################
+""" 
+What info do I have in cash_statement_data?
+1. investments
+2. changeToLiabilities
+3. totalCashflowsFromInvestingActivities
+4. netBorrowings
+5. totalCashFromFinancingActivities
+6. changeToOperatingActivities
+7. issuanceOfStock
+8. netIncome
+9. changeInCash
+10. repurchaseOfStock
+11. totalCashFromOperatingActivities
+12. depreciation
+13. otherCashflowsFromInvestingActivities
+14. dividendsPaid
+15. changeToInventory
+16. changeToAccountReceivables
+17. otherCashflowsFromFinancingActivities
+18. changeToNetincome
+19. capitalExpenditures
+"""

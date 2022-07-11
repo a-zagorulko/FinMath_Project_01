@@ -67,5 +67,5 @@ def scrape_tickers():
 
     # TODO: CHECK FOR DUPLICATES IF COMBINE RUSSELLL AND SIX
 
-    return df_russell,df_swiss
+    return df_russell, df_swiss
 
